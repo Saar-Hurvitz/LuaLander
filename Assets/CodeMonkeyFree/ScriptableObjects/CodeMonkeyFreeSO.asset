@@ -14,45 +14,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.00
   subtype: lunarLanderFree
-  lastShownTimestamp: 1786953669
+  lastShownTimestamp: 1794638182
   lastUpdateResponse:
     version: 1.00
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1786953669
+  checkedLastUpdateTimestamp: 1794638182
   lastQOTDResponse:
-    questionId: 333
-    questionText: 'If I do:
+    questionId: 362
+    questionText: 'When would this code cause an error?
 
-      <p>Instantiate(myPrefab, Input.mousePosition,
-      Quaternion.identity);</p>
+      <p>Building closest
+      = null;</p>
 
-      <p>Will myPrefab be spawned under the mouse?</p>'
-    answerA: Yes
-    answerB: No
-    answerC: 
+      <p>for (int i = 0; i &lt; instanceList.Count; i++) {</p>
+
+      <p>&nbsp;
+      &nbsp; if (Vector3.Distance(position, instanceList[i].GetPosition()) &lt; Vector3.Distance(position,
+      closest.GetPosition())) {</p>
+
+      <p>&nbsp; &nbsp; &nbsp; &nbsp; closest
+      = instanceList[i];</p>
+
+      <p>&nbsp; &nbsp; }</p>
+
+      <p>}</p>
+
+      <p>return
+      closest;</p>'
+    answerA: When instanceList is empty
+    answerB: When instanceList has at least one element
+    answerC: When instanceList has exactly two elements
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1786953669
+  lastQotdTimestamp: 1794638182
   lastDynamicHeaderResponse:
-    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle_EndsSoon.png
-    topText: Get 80% OFF on ALL my Courses and Games!!! (ENDS AUGUST)
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/codeMonkeyEndOfSummerBundleOct26.png
+    topText: Back for a limited time until the END OF SUMMER, 80% OFF all my Courses
+      and Games!
     topLink: summerbundle
-    bottomText: DONT MISS the latest important trends, sign up for my FREE Weekly
-      Newsletter!
+    bottomText: FREE Game Dev Insights every week straight to your inbox!
     bottomLink: gamedevreport
-  lastDynamicHeaderTimestamp: 1786953669
+  lastDynamicHeaderTimestamp: 1794638182
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1786953669
+  websiteLatestMessageTimestamp: 1794638182
   websiteLatestVideos:
     videos:
-    - youTubeId: VZCaQSzsGwU
-      title: TOP 10 FREE NEW Assets AUGUST 2026!
-    - youTubeId: Hwpbh2fDPlE
-      title: The SECRET WEAPON making Unity 7 AWESOME - CoreCLR Explained
-    - youTubeId: xsQTCKSHte8
-      title: TOP 10 NEW Games, Made with Unity! (JULY 2026)
-    - youTubeId: 26F9uHlPEO0
-      title: WHY this game made $10,000,000!
-  websiteLatestVideosTimestamp: 1786953669
+    - youTubeId: WhWutMiW1lI
+      title: My 10th Steam game is out! Why am I both HAPPY and SAD?
+    - youTubeId: dkIfY7svIpg
+      title: TOP 10 NEW Games, Made with Unity! (OCTOBER 2026)
+    - youTubeId: 6HsAEaBkpLg
+      title: How a PRO builds a Weapon System!
+    - youTubeId: HZjtgeSpmPU
+      title: Does Unity CANCEL their features?
+  websiteLatestVideosTimestamp: 1794638182

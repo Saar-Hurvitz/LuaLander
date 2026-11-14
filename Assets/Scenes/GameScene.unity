@@ -1659,7 +1659,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2bce9bb62b9e02443abbfd7da6bb62c6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  m_EditorClassIdentifier: Assembly-CSharp::LandedUI
   titleTextMesh: {fileID: 2137758813}
   statsTextMesh: {fileID: 1289995134}
   nextButtonTextMesh: {fileID: 1453568692}

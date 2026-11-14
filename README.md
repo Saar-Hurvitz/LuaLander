@@ -92,12 +92,6 @@ The main managers (`Lander`, `GameManager`, `GameInput`, `SoundManager`, `MusicM
 - Cinemachine 3
 - TextMesh Pro, 2D Sprite Shape (terrain), 2D Animation
 
-## Known issues
-
-- `Assets/Scripts/UI/LandedUI.cs` declares a class named `NewMonoBehaviourScript`. Unity expects a MonoBehaviour's class name to match its file name, so rename the class to `LandedUI`.
-- `GameInput.cs` and `GameManager.cs` contain unused `using NUnit...` lines. NUnit is a test-only assembly, so these can break player builds. `GameManager.cs` also has an unused `using Unity.VectorGraphics;`. Remove these lines before building.
-- `GameManager.AddScore` and `Lander` still print debug messages with `Debug.Log`.
-
 ## Credits
 
 - Font: [VT323](https://fonts.google.com/specimen/VT323), SIL Open Font License (`Assets/Fonts/OFL.txt`).

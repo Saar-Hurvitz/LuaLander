@@ -1,7 +1,5 @@
-using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
-using Unity.VectorGraphics;
 using UnityEngine.SceneManagement;
 using Unity.Cinemachine;
 using System;
@@ -103,7 +101,6 @@ public class GameManager : MonoBehaviour
     public void AddScore(int addScoreAmount)
     {
         score += addScoreAmount;
-        Debug.Log(score);
     }
 
     public int GetScore()

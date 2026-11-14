@@ -127,7 +127,6 @@ public class Lander : MonoBehaviour
    private void OnCollisionEnter2D(Collision2D collision2D){
         if(!collision2D.gameObject.TryGetComponent(out LandingPad landingPad))
         {
-            Debug.Log("Crushed on the terrain");
             OnLanded?.Invoke(this, new OnLandedEventArgs
             {
                 landingType = LandingType.WrongLandingArea,
@@ -143,7 +142,6 @@ public class Lander : MonoBehaviour
         float relativeVelocityMagnitude = collision2D.relativeVelocity.magnitude;
         if (relativeVelocityMagnitude > softLandingVelocityMagnitude)
         {
-            Debug.Log("Landed Too hard!");
             OnLanded?.Invoke(this, new OnLandedEventArgs
             {
                 landingType = LandingType.TooFastLanding,
@@ -160,7 +158,6 @@ public class Lander : MonoBehaviour
         if(dotVector < minVector)
         {
             //Landed on a too steep angle
-            Debug.Log("Landed on a too steep angle!");
             OnLanded?.Invoke(this, new OnLandedEventArgs
             {
                 landingType = LandingType.TooSteepAngle,
@@ -172,7 +169,6 @@ public class Lander : MonoBehaviour
             SetState(State.GameOver);
             return;
         }
-        Debug.Log("Successful Landing!");
 
         float maxScoreAmountLandingAngle = 100;
         float scoreDotVectorMultiplier = 10;
@@ -181,12 +177,8 @@ public class Lander : MonoBehaviour
         float maxScoreAmountForTheLandingSpeed = 100;
         float landingSpeedScore = (softLandingVelocityMagnitude - relativeVelocityMagnitude) * maxScoreAmountForTheLandingSpeed;
 
-        Debug.Log("Landing angle score : " + landingAngleScore);
-        Debug.Log("Landing speed : " + landingSpeedScore);
-
         int score =Mathf.RoundToInt((landingAngleScore + landingSpeedScore) * landingPad.getScoreMultiplier());
 
-        Debug.Log("Score : " + score);
         OnLanded?.Invoke(this, new OnLandedEventArgs {
             landingType = LandingType.Success,
             dotVector = dotVector,
