@@ -139,3 +139,35 @@ crashlytics-build.properties
 
 # macOS Finder metadata
 .DS_Store
+
+# ------------------------------------------------------------------
+# Local secrets (added by secrets audit 2026-11-16)
+# Keeps credentials out of commits. NOTE: .gitignore does not untrack
+# files that are already committed, and does not revoke leaked keys.
+# ------------------------------------------------------------------
+# Local environment files (commit only *.example templates, with no real values)
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Local secret storage
+secrets/
+credentials.json
+.credentials.json
+
+# Private keys, signing keys and keystores (Android keystores,
+# Apple .p8 API keys / .p12 certificates, Windows .pfx code-signing)
+*.key
+*.pem
+*.p8
+*.p12
+*.pfx
+*.keystore
+*.jks
+
+# AI coding tools: personal/local files only (shared project config stays tracked)
+.claude/settings.local.json
+.claude/.credentials.json
+CLAUDE.local.md
+.cursor/mcp.json
