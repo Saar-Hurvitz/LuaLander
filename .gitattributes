@@ -1,0 +1,4 @@
+Assets/TextMesh[[:space:]]Pro/** linguist-vendored
+Assets/CodeMonkeyFree/** linguist-vendored
+*.shader linguist-vendored
+*.hlsl linguist-vendored
