@@ -2,6 +2,10 @@
 
 A 2D lunar-lander game made in Unity. Fly the lander through rocky terrain, collect coins and fuel, and touch down gently on a landing pad. A softer, straighter landing on a higher-multiplier pad scores more points.
 
+Built by following [Code Monkey's](https://www.youtube.com/@CodeMonkeyUnity) Unity course, without AI assistance, to learn Unity fundamentals.
+
+**Play it on itch.io:** https://saarhurvitz.itch.io/lua-lander
+
 ## Requirements
 
 - **Unity 6000.5.2f1** (Unity 6). Install this exact version through Unity Hub. Other versions may trigger an upgrade prompt.
@@ -94,5 +98,6 @@ The main managers (`Lander`, `GameManager`, `GameInput`, `SoundManager`, `MusicM
 
 ## Credits
 
-- Font: [VT323](https://fonts.google.com/specimen/VT323), SIL Open Font License (`Assets/Fonts/OFL.txt`).
+- Based on Code Monkey's Unity course.
+- Font: VT323, SIL Open Font License (`Assets/Fonts/OFL.txt`).
 - Includes the free Code Monkey editor package (`Assets/CodeMonkeyFree`).
