@@ -1,4 +1,9 @@
+# Exclude third-party / shader code from GitHub's language stats
 Assets/TextMesh[[:space:]]Pro/** linguist-vendored
 Assets/CodeMonkeyFree/** linguist-vendored
-*.shader linguist-vendored
-*.hlsl linguist-vendored
+
+*.shader      linguist-detectable=false
+*.shadergraph linguist-detectable=false
+*.hlsl        linguist-detectable=false
+*.cginc       linguist-detectable=false
+*.compute     linguist-detectable=false
